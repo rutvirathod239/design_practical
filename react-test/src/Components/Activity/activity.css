@@ -1,0 +1,30 @@
+.activities{
+    background: #F5F6F8;
+    max-width: 522px;
+    min-height: 620px;
+    margin: 0 auto;
+}
+.green-color1{
+    background: #0C611A;
+}
+@media (max-width: 1024px) {
+    .activities{
+        max-height: 390px;        
+    }
+}
+@media (max-width: 767px) {
+    .activities{
+        max-height: max-content;
+        background: #FFFFFF;        
+    }
+}
+.MuiTimelineItem-root:before{
+    flex: none !important;
+    padding: 0 !important;
+}
+.setIcon{
+    width: 34px;
+    height: 34px;
+    background: #DEE8FF !important;
+    justify-content: center;
+}

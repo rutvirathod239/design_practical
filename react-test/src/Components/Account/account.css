@@ -1,0 +1,59 @@
+.accountView{
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    margin: 25px 50px 0;
+}
+.title{
+    text-align: left;
+    font: normal normal  28px/33px Work Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+.viewbutton{
+    background: #232E3E 0% 0% no-repeat padding-box !important;
+    border-radius: 4px;
+    opacity: 1;
+    float: right;
+    text-align: left;
+    font: normal normal 600 16px/19px Work Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF !important;
+}
+.successMessageBox{
+    width: 374px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0C611A;
+    background: #CEF2DA;
+    cursor: pointer;
+}
+.warningMessageBox{
+    width: 374px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FF3A3A;
+    background: #FFDCDC;
+    cursor: pointer;
+}
+
+.arrowtooltip{
+    position: absolute;
+    top: -16%;
+    right: 10%;
+}
+
+
+@media (max-width: 767px) {
+    .accountView{
+        display: flex;
+        justify-content: space-between;
+        text-align: start;
+        margin: 25px 25px 30px;
+    }
+}

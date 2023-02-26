@@ -1,0 +1,46 @@
+.family{
+    background: #F5F6F8;    
+    height: 100%;
+}
+.familyuserlist{
+    max-height: 290px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.family-listbox{
+    max-width: 430px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.familyuserlist::-webkit-scrollbar {
+    width: 5px;
+}
+.familyuserlist::-webkit-scrollbar-track {
+    background: #E8E8E8;
+}
+.familyuserlist::-webkit-scrollbar-thumb {
+    background: #232E3E;
+    opacity: 0.5;
+}
+.blue-dark-color{
+    background: #CAD7F5;
+}
+.blue-color{
+    background: #DEE8FF;
+}
+.yellow-color{
+    background: #F8991F;
+}
+.white-color{
+    background: #FFFFFF;
+}
+
+.Admin-head{
+    color: #FFFFFF;
+    margin-left: 15px;
+}

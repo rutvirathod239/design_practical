@@ -1,0 +1,91 @@
+.invitation{
+    background: #F5F6F8;    
+    min-height: 400px;
+}
+.familyuserlist{
+    max-height: 290px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.family-userlist-box{
+    max-width: 767px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.familyuserlist::-webkit-scrollbar {
+    width: 5px;
+}
+.familyuserlist::-webkit-scrollbar-track {
+    background: #E8E8E8;
+}
+.familyuserlist::-webkit-scrollbar-thumb {
+    background: #232E3E;
+    opacity: 0.5;
+}
+
+.blue-color3{
+    background: #DEE8FF;
+}
+.yellow-color{
+    background: #F8991F;
+}
+.yellow-color:active{
+    background: #F8991F;
+}
+.gray-color{
+    background:  #DBDBDB;
+}
+.green-color2{
+    background: #0C611A;
+    height: 30px;
+    width: 30px;
+}
+.Admin-head{
+    color: #FFFFFF;
+}
+.yellow-color-btn{
+    background: #DBDBDB !important;
+    border-radius: 70px !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+}
+.yellow-color-btn.active{    
+    color: #FFFFFF !important;
+    background: #F8991F !important;
+}
+.button{
+    font-weight: 400;
+    text-transform: none !important;
+}
+@media (max-width: 767px) {
+    .inner-text{
+        line-height: 1 !important;
+    }
+    .invitation{
+        background: #FFFFFF;
+    }
+    .familyuserlist{
+        max-height: 100vh;
+        overflow: auto;
+    }
+}
+.arrow{
+    position: relative;
+}
+.arrow::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid #F8991F;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    bottom: -25%;
+    left: 40%;
+}
