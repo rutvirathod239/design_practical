@@ -19,30 +19,14 @@ import Activity from './Components/Activity/Activity';
 import Invitations from './Components/Invitations/Invitations';
 // import { makeStyles } from "@material-ui/core/style";
 import { makeStyles } from '@mui/styles';
-const StyledTabs = styled((props) => (
-  <Tabs
-    {...props}
-    TabIndicatorProps={{ children: <span className="MuiTabs-indicatorSpan" /> }}
-  />
-))({
-  "& .MuiTabs-indicator": {
-    display: "flex",
-    justifyContent: "center",
-    backgroundColor: "transparent",
-  },
-  "& .MuiTabs-indicatorSpan": {
-    maxWidth: 90,
-    width: "100%",
-    backgroundColor: "#F8991F",
-  },
-});
 
-const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
-  ({ theme }) => ({
+
+const useStyles = makeStyles({
+  tabs: {
     textTransform: "none",
-    fontWeight: theme.typography.fontWeightRegular,
-    fontSize: theme.typography.pxToRem(15),
-    padding: "12px",
+   
+    fontSize:"12px",
+
     color: "#000000",
     "&.Mui-selected": {
       color: "#F8991F",
@@ -50,11 +34,6 @@ const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
     "&.Mui-focusVisible": {
       backgroundColor: "rgba(248, 153, 31, 0.32)",
     },
-  }),
-);
-const useStyles = makeStyles({
-  tabs: {
-    
     "& .MuiTabs-indicator": {
       display: "flex",
       justifyContent: "center",
@@ -84,20 +63,20 @@ function App() {
             <Account />
             <TabContext value={value}>
             <Tabs
-             fullWidth
+             scrollButtons
              centered
               value={value}
               onChange={handleChange}
               className={classes.tabs}
-              style={{borderBottom:"1px solid gray"}}
+              sx={{borderBottom:1,borderColor:"divider",textTransform:"none"}}
             >
-              <Tab value="one" label="Profile" />
-              <Tab value="two" label="Wallet" />
-              <Tab value="three" label="Activities" />
-              <Tab value="four" label="Invitations" />
+              <Tab sx={{textTransform:"none"}} value="one" label="Profile" />
+              <Tab sx={{textTransform:"none"}} value="two" label="Wallet" />
+              <Tab sx={{textTransform:"none"}} value="three" label="Activities" />
+              <Tab sx={{textTransform:"none"}} value="four" label="Invitations" />
 
             </Tabs>
-            <TabPanel value="one">
+            <TabPanel  value="one">
               <Family isMobile={mobileview} />
               <UserProfile />
             </TabPanel>

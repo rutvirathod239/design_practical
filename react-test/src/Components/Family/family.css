@@ -2,7 +2,7 @@
     background: #F5F6F8;    
     height: 100%;
 }
-.familyuserlist{
+.familyuserlist1{
     max-height: 290px;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -17,15 +17,28 @@
     border-radius: 6px;
     margin-bottom: 10px;
 }
-.familyuserlist::-webkit-scrollbar {
+.familyuserlist1::-webkit-scrollbar {
     width: 5px;
+    
 }
-.familyuserlist::-webkit-scrollbar-track {
+.familyuserlist1::-webkit-scrollbar-track {
     background: #E8E8E8;
+    background-clip: content-box;
+    
 }
-.familyuserlist::-webkit-scrollbar-thumb {
-    background: #232E3E;
+.familyuserlist1::-webkit-scrollbar-thumb {
+    /* background: #232E3E;
+    opacity: 0.5; */
+    background: #9a9b9d;
+    border-radius: 20px;
     opacity: 0.5;
+    
+}
+.familyuserlist1::-webkit-scrollbar-thumb:hover {
+    background: #9a9b9d;
+    border-radius: 30px;
+    cursor: pointer;
+    
 }
 .blue-dark-color{
     background: #CAD7F5;

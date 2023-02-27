@@ -99,12 +99,14 @@
     justify-content: flex-end;
 }
 .profile-button{
+    text-transform: none;
     margin-top: 5px !important;
     height: 30px !important;
     width: 92% !important;
     letter-spacing: 0 !important;
     line-height: 0.8 !important;
-    font-size: 12px !important;
+    font-size: 10px !important;
+    padding: 0 !important;
 }
 .success-button{
     background: #0C611A 0% 0% no-repeat padding-box;
@@ -153,8 +155,10 @@
         justify-content: flex-start;
     }
     .profile-button{
-        width: auto !important;
+        width: 113px !important;
         margin: 5px !important;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     .inputfullwidth{

@@ -20,7 +20,7 @@ const UserProfile = () => {
     return (<>
         {/* <div style={{padding:"20px"}}> */}
         
-            <Box className='profilebox' px={4} py={3} sx={{ borderRadius: "6px" }}>
+            <Box className='profilebox' px={4} py={3} sx={{ borderRadius: "6px",paddingRight:"10px",paddingLeft:"10px" }}>
                 <Grid className='Profile-photo-main'>
                     <Grid>
                         <div role='presentation' className={updateProfilePhoto ? "Profile-photo add-border" : "Profile-photo"} onKeyDown={handleProfilePhotoSetting} onClick={handleProfilePhotoSetting}>
@@ -44,7 +44,7 @@ const UserProfile = () => {
                     <Grid className='profilename'>
                         <Grid className='profilename-location'>
                             <Typography variant="h6" >John Smith</Typography>
-                            <Typography variant="caption" display="block"><LocationOnIcon style={{ fontSize: "15px" }} />Main St. Farmington, CA 123</Typography>
+                            <Typography variant="caption" display="block" style={{fontSize:"11px",color:"gray"}}><LocationOnIcon style={{ fontSize: "10px" }} />Main St.Farmington,CA 123</Typography>
                         </Grid>
                     </Grid>
                 </Grid>
@@ -141,9 +141,9 @@ const UserProfile = () => {
                 </Grid>
                 <Grid className='Profile-photo-button'>
                     <Grid className="media-767-button-none">
-                        <Button variant="contained" className={"profile-button"} color={"success"}  size={"sm"} >Save Changes</Button>
-                        <Button variant="contained" className={"profile-button dark"}  color={"success"}  size={"sm"} >Change Password</Button>
-                        <Button variant="contained" className={"profile-button"} color={"error"}  size={"sm"} >Leave Family</Button>
+                        <Button variant="contained" className={"profile-button"} sx={{textTransform:"none"}} color={"success"}  size={"sm"} >Save Changes</Button>
+                        <Button variant="contained" className={"profile-button dark"} sx={{textTransform:"none"}} color={"success"}  size={"sm"} >Change Password</Button>
+                        <Button variant="contained" className={"profile-button"} sx={{textTransform:"none"}} color={"error"}  size={"sm"} >Leave Family</Button>
                     </Grid>
                     <Grid className="media-767-button">
                         <Button variant="contained" className={"profile-button dark "} size={"sm"} > Edit </Button>

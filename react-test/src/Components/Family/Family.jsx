@@ -7,6 +7,22 @@ import { SearchOutlined } from "@mui/icons-material";
 import Box from "@mui/material/Box";
 import Chip from "@mui/material/Chip";
 import { Button } from "@mui/material";
+import { makeStyles } from "@mui/styles";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    "&::-webkit-scrollbar": {
+      width: 7,
+    },
+    "&::-webkit-scrollbar-track": {
+      boxShadow: `inset 0 0 6px rgba(0, 0, 0, 0.3)`,
+    },
+    "&::-webkit-scrollbar-thumb": {
+      backgroundColor: "darkgrey",
+      outline: `1px solid slategrey`,
+    },
+  },
+}));
 const Family = ({ismobileview}) =>{
     const familyarray = [
         {
@@ -39,6 +55,7 @@ const Family = ({ismobileview}) =>{
         },
     
       ];
+      const classes = useStyles();
     return (
     <>
         <Box className='family' py={3} sx={{borderRadius:"6px", paddingLeft: ismobileview ? "10px" : "25px" , paddingRight: ismobileview ? "10px": "25px" }}>
@@ -49,7 +66,8 @@ const Family = ({ismobileview}) =>{
             <Button variant="contained" className={"green-color3 button"} color={"success"}  size={"small"}> Add New</Button>
           </Box>
         </Box>
-        <div className='familyuserlist'>
+        <div className='familyuserlist1'>
+        {/* <div className={classes.root}> */}
           {familyarray.map((item, index)=>{
             return(
               <div key={index} className={`family-listbox ${item.type === "MEMBER" ? "blue-color" : "yellow-color"}`}>
