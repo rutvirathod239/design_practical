@@ -33,10 +33,10 @@ const BankAccount = () => {
                         <div key={index} className={"bank-account-user-box white-background"}>
                             <Box sx={{ display: "flex", alignItems: "center", flexDirection: "row", justifyContent: "space-between", width: "100%" }}>
                                 <Box sx={{ display: "flex" }}>
-                                    <img src={MasterCardImage} style={{height:"57px",marginTop:"30px"}} alt="MasterCardImg" />
+                                    <img src={MasterCardImage}  alt="MasterCardImg" />
                                     <Box sx={{ padding: "19px 22px 17px 15px", display: "flex", flexDirection: "column", gap: "1px", textAlign: "left" }}>
-                                        <p className={"font-medium margin-y-0 bank-account-black-color"}>**** **** {item.accountnumber.slice(8, 12)}</p>
-                                        <p className={"font-medium margin-y-0 bank-account-grey-color"}>Expires {item.expirydate}</p>
+                                        <p className={"font-medium margin-y-0 bank-account-black-color1"}>**** **** {item.accountnumber.slice(8, 12)}</p>
+                                        <p className={"font-medium margin-y-0 bank-account-grey-color1"}>Expires {item.expirydate}</p>
                                     </Box>
                                 </Box>
                                 <Button className={"green-color button appear-button"} variant="contained" color="success"  size={"sm"} > Edit</Button>

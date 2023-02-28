@@ -68,12 +68,12 @@ function App() {
               value={value}
               onChange={handleChange}
               className={classes.tabs}
-              sx={{borderBottom:1,borderColor:"divider",textTransform:"none"}}
+              sx={{borderBottom:1,borderColor:"divider",textTransform:"none",padding:"0px"}}
             >
-              <Tab sx={{textTransform:"none"}} value="one" label="Profile" />
-              <Tab sx={{textTransform:"none"}} value="two" label="Wallet" />
-              <Tab sx={{textTransform:"none"}} value="three" label="Activities" />
-              <Tab sx={{textTransform:"none"}} value="four" label="Invitations" />
+              <Tab sx={{textTransform:"none",padding:"0px"}} value="one" label="Profile" />
+              <Tab sx={{textTransform:"none",padding:"0px"}} value="two" label="Wallet" />
+              <Tab sx={{textTransform:"none",padding:"0px"}} value="three" label="Activities" />
+              <Tab sx={{textTransform:"none",padding:"0px"}} value="four" label="Invitations" />
 
             </Tabs>
             <TabPanel  value="one">

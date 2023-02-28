@@ -99,3 +99,40 @@
     bottom: -25%;
     left: 40%;
 }
+
+@media only screen and (min-width: 768px) {
+    .yellow-color-btn{
+        background: #DBDBDB !important;
+        border-radius: 60px !important;
+        color: #000000 !important;
+        box-shadow: none !important;
+    }
+    .yellow-color-btn.active{    
+        color: #FFFFFF !important;
+        background: #F8991F !important;
+    }
+    .button{
+        font-weight: 300;
+        text-transform: none !important;
+        font-size: 12px !important;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .yellow-color-btn{
+        background: #DBDBDB !important;
+        border-radius: 60px !important;
+        color: #000000 !important;
+        box-shadow: none !important;
+    }
+    .yellow-color-btn.active{    
+        color: #FFFFFF !important;
+        background: #F8991F !important;
+    }
+    .button{
+        font-weight: 300;
+        text-transform: none !important;
+        font-size: 12px !important;
+        padding: 3px 9px !important
+    }
+}

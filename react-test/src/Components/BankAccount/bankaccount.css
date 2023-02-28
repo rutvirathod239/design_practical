@@ -22,11 +22,11 @@
     padding: 7px 14px 7px 14px;
 }
 
-.bank-account-grey-color{
+.bank-account-grey-color1{
     color: #C7C7C7;
     font-size: 14px;
 }
-.bank-account-black-color{
+.bank-account-black-color1{
     font-size: 16px;
 }
 
@@ -44,6 +44,13 @@
     .bank-account-user-box{
         width: 272px !important;
     }
+    .bank-account-grey-color1{
+        color: #C7C7C7;
+        font-size: 10px;
+    }
+    .bank-account-black-color1{
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width: 767px){
@@ -52,5 +59,12 @@
     }
     .white-background{
         background: #F5F6F8 !important;
+    }
+    .bank-account-grey-color1{
+        color: #C7C7C7;
+        font-size: 10px;
+    }
+    .bank-account-black-color1{
+        font-size: 12px;
     }
 }
