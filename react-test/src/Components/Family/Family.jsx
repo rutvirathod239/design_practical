@@ -73,10 +73,10 @@ const Family = ({ismobileview}) =>{
               <div key={index} className={`family-listbox ${item.type === "MEMBER" ? "blue-color" : "yellow-color"}`}>
                 <Box sx={{display:"flex",alignItems:"center"}}>
                   <img src={UserImage} alt="UserImg"/>
-                  <Typography sx={{ml:2,fontSize:"16px",fontWeight:"500"}} >{item.name}</Typography>
+                  <Typography sx={{ ml:1,fontSize:"13px",fontWeight:"400"}} >{item.name}</Typography>
                 </Box>
                 <Box sx={{display:"flex"}}>                  
-                  <Chip label={item.type} className={item.type === 'MEMBER' ? 'blue-dark-color' : 'white-color'}  sx={{ borderRadius:"2px",backgroundColor: item.type === 'MEMBER' ? '#CAD7F5' : '#FFFFFF',maxHeight:"25px"}} />
+                  <Chip label={item.type} className={item.type === 'MEMBER' ? 'blue-dark-color' : 'white-color'}  sx={{ borderRadius:"2px",backgroundColor: item.type === 'MEMBER' ? '#CAD7F5' : '#FFFFFF',maxHeight:"25px",fontSize:"10px"}} />
                   {item.type === "ADMIN" && 
                     <Typography sx={{background:"#ffffff",display:"flex",borderRadius:"2px",maxHeight:"25px"}} py={1} px={1} ml={1} >
                         <img src={UserIcon} alt="UserIcon" width="13px"/>
